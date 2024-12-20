@@ -2,7 +2,7 @@
 // const root = createRoot(document.getElementById("root"))
 
 // root.render(
-//     <h1>Hello, React!</h1>
+//     <h1 className="header">Hello, React!</h1>
 // )
 
 
@@ -19,3 +19,8 @@ Don't use innerHTML to accomplish any of this.
     
 */
 
+const root = document.getElementById("root");
+const h1 = document.createElement("h1");
+h1.textContent = "Hello, React!";
+h1.className = "header";
+root.appendChild(h1);
